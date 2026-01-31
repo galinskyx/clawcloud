@@ -1,0 +1,40 @@
+{
+  "name": "clawcloud",
+  "version": "1.0.0",
+  "description": "Autonomous cloud infrastructure for AI agents",
+  "private": true,
+  "workspaces": [
+    "contracts",
+    "backend",
+    "cli",
+    "telegram-bot"
+  ],
+  "scripts": {
+    "install:all": "npm install && cd contracts && npm install && cd ../backend && npm install",
+    "build": "cd contracts && npm run compile",
+    "test": "cd contracts && npm test",
+    "deploy:testnet": "cd contracts && npm run deploy:base-sepolia",
+    "deploy:mainnet": "cd contracts && npm run deploy:base",
+    "start:api": "cd backend && npm start",
+    "start:listener": "cd backend && npm run listen",
+    "dev": "npm run start:api & npm run start:listener",
+    "clean": "cd contracts && npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/clawcloud.git"
+  },
+  "keywords": [
+    "ai-agents",
+    "cloud",
+    "blockchain",
+    "web3",
+    "vm",
+    "autonomous"
+  ],
+  "author": "ClawCloud",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
