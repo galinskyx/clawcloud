@@ -1,40 +1,34 @@
 {
-  "name": "clawcloud",
+  "name": "@clawcloud/contracts",
   "version": "1.0.0",
-  "description": "Autonomous cloud infrastructure for AI agents",
-  "private": true,
-  "workspaces": [
-    "contracts",
-    "backend",
-    "cli",
-    "telegram-bot"
-  ],
+  "description": "ClawCloud smart contracts for autonomous VM provisioning",
   "scripts": {
-    "install:all": "npm install && cd contracts && npm install && cd ../backend && npm install",
-    "build": "cd contracts && npm run compile",
-    "test": "cd contracts && npm test",
-    "deploy:testnet": "cd contracts && npm run deploy:base-sepolia",
-    "deploy:mainnet": "cd contracts && npm run deploy:base",
-    "start:api": "cd backend && npm start",
-    "start:listener": "cd backend && npm run listen",
-    "dev": "npm run start:api & npm run start:listener",
-    "clean": "cd contracts && npm run clean"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/clawcloud.git"
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "verify": "hardhat verify",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
   },
   "keywords": [
-    "ai-agents",
-    "cloud",
-    "blockchain",
-    "web3",
+    "ethereum",
+    "base",
+    "smart-contracts",
+    "nft",
     "vm",
-    "autonomous"
+    "cloud"
   ],
   "author": "ClawCloud",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "hardhat": "^2.19.0",
+    "dotenv": "^16.3.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1"
   }
 }
