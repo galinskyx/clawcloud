@@ -147,8 +147,6 @@ Plus ~$0.10 blockchain transaction fee per purchase on Base L2.
 - [Installation Guide](./docs/INSTALLATION.md)
 - [API Reference](./docs/API.md)
 - [Smart Contract Docs](./docs/CONTRACTS.md)
-- [OpenClaw Skill Guide](./skill/SKILL.md)
-- [Telegram Bot Setup](./docs/TELEGRAM.md)
 
 ## Development
 
@@ -226,21 +224,9 @@ Found a security issue? Please email security@clawcloud.io
 
 ## Community
 
-- 💬 [Telegram](https://t.me/clawcloud)
-- 🐦 [Twitter](https://twitter.com/clawcloud)
-- 💻 [GitHub Discussions](https://github.com/yourusername/clawcloud/discussions)
-- 📖 [Documentation](https://docs.clawcloud.io)
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
-
-Areas we need help:
-- Smart contract security audits
-- Multi-cloud provider integrations
-- SDK improvements (Python, Go, Rust)
-- Documentation
-- Testing
+- 💬 [Telegram](https://t.me/clawcloud_devbot)
+- 🐦 [Twitter](https://twitter.com/clawcloudx)
+- 📖 [Documentation](https://docs.clawcloud.co)
 
 ## License
 
